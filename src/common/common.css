@@ -1,0 +1,247 @@
+  .main{
+    display: table;
+    width: 100%;
+
+  }
+  .main-left{
+    /* flex: 0 0 300px; */
+    display: table-cell;
+    height: 100vh;
+    min-height: 100%;
+    vertical-align: top;
+    width: 200px;
+    border-right: 1px solid #f3f3f3;
+    background-color: #304156;
+  }
+  .main-right{
+    /* flex: auto; */
+    display: table-cell;
+    padding-left: 0;
+    background: #fff;
+  }
+  .main-left .el-menu-item{
+    text-align: left;
+    padding-left: 40px;
+  }
+  .el-submenu__title{
+    text-align: left;
+  }
+  .el-menu-item-group{
+    width: 150px;
+    overflow: hidden;
+  }
+  .el-menu-item i{
+    color: #bfcbd9 !important;
+  }
+  .el-menu,
+  .el-submenu__title:focus,
+  .el-submenu__title:hover,
+  .el-menu-item:focus,
+  .el-menu-item:hover{
+    background-color: transparent !important;
+  }
+  .nav-text,.nav-text i,.el-submenu__title{
+    color: rgb(191, 203, 217);
+  }
+  .nav-text{
+    padding: 20px 20px;
+  }
+  .nav-text span{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .active i{
+    color: rgb(64, 158, 255) !important;
+  }
+  .active{
+    background-color: transparent;
+  }
+  .active div{
+    color: rgb(64, 158, 255);
+
+  }
+  .el-menu-item-group .nav-text,.el-menu-item-group .nav-text i{
+    color: #00FFFF;
+  }
+  .el-menu-item-group .is-active,.el-menu-item-group .is-active i{
+    color: rgb(64, 158, 255);
+  }
+  .main-box{
+    padding:30px 20px;
+  }
+  .user-name{
+    font-size:16px;
+    color: #333;
+    line-height: 24px;
+    padding-right: 20px;
+  }
+  .left-menu{
+    position: fixed;
+    left: 20px;
+    top: 30px;
+    width: 156px;
+  }
+  .user-title{
+    font-size: 48px;
+    text-align: center;
+    line-height: 80px;
+  }
+.main-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+}
+.home-title{
+	text-align: left;
+	padding:20px;
+	font-size: 24px;
+	padding: 20px;
+}
+.home-add{
+	text-align: left;
+	background-color: #fff;
+	padding:30px;
+}
+.home-table{
+	background-color: #fff;
+	padding: 0 30px 30px 30px;
+}
+.cell img{
+	height: 50px;
+}
+.modify{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.5);
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+.home-form{
+	background-color:#fff;
+	width: 350px;
+	padding:60px 100px 30px 100px;
+  }
+	.confomml-name{
+	padding-bottom: 30px;
+    position: relative;
+	}
+  .confomml-name label.error{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #FF0000;
+  }
+	.confomml-name input,.confomml-name textarea{
+	width: 200px;
+	border: 1px solid #ccc;
+	padding:0 10px;
+    font-family: '微软雅黑';
+	}
+  .confomml-name input{
+    line-height: 48px;
+  }
+  .confomml-name textarea{
+    font-size: 14px;
+    line-height: 24px;
+  }
+.confomml-name input:focus,.confomml-name textarea{
+	outline: none;
+}
+.confomml-name label{
+	padding-right: 20px;
+}
+.confom-btn{
+	margin:30px 0;
+}
+.confom-btn:last-child{
+	margin:0 0 30px 0;
+}
+.confom-btn button{
+	width: 100%;
+}
+.upload-demo{
+	text-align: left;
+	padding-left: 22px;
+}
+.upload-demo label{
+	width: 72px;
+	display: inline-block;
+	text-align: left;
+	padding-right: 10px;
+}
+.upload-demo label.error{
+	width: 90px;
+}
+.upload-demo span{
+  width: 230px;
+}
+.old-img{
+	max-width: 60%;
+	max-height: 200px;
+}
+.old-img-box{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.change-btn{
+	padding: 12px 20px;
+	font-size: 14px;
+	border-radius: 4px;
+	color: #FFF;
+	background-color: #409EFF;
+	border-color: #409EFF;
+	outline: none;
+	border: none;
+}
+.change-btn:hover,.change-btn:focus{
+	outline: none;
+	border: none;
+}
+
+  .confomml-name select{
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    height: 50px;
+  }
+  .confomml-name select:hover,.confomml-name select:focus{
+    outline: none;
+  }
+	.home-table th,.home-table td{
+		text-align: center;
+	}
+  .conmain-left{
+    border-right: 1px solid #CCCCCC;
+    padding-right: 24px;
+  }
+  .change-newstext{
+    width: 200px;
+    line-height: 48px;
+    background-color: #409EFF;
+    color: #fff;
+    margin:0 auto 30px auto;
+    border-radius: 24px;
+    cursor: pointer;
+  }
+  .message-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ .message-img{
+   max-width: 100%;
+   max-height: 600px;
+ }
+.el-table__body .cell img{
+  cursor: pointer;
+}
+.action-text{
+  color: #f00;
+}
