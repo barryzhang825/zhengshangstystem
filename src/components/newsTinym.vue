@@ -35,7 +35,7 @@
   .newtiny-main{
     background-color: #fff;
     width: 70%;
-    max-height: 70%;
+    min-height: 50%;
     overflow-y: scroll;
   }
   .ntm-box{

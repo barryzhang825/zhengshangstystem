@@ -28,6 +28,7 @@
   import 'tinymce/plugins/wordcount'
   import 'tinymce/plugins/colorpicker'
   import 'tinymce/plugins/textcolor'
+  import "../assets/tinymce/plugins/lineheight/plugin";
 	export default {
     name: 'tinymce',
     props: {
@@ -43,12 +44,12 @@
       plugins: {
         type: [String, Array],
         //default: 'lists image media table textcolor wordcount contextmenu',
-        default: 'lists image media table wordcount'
+        default: 'lists image media table wordcount code lineheight fullscreen'
       },
 
       toolbar: {
         type: [String, Array],
-        default: ' undo redo |preview| formatselect | fontselect | fontsizeselect | forecolor backcolor | cut copy paste ' +
+        default: ' undo redo |fullscreen code|  preview| formatselect | fontselect | fontsizeselect | lineheight | forecolor backcolor | cut copy paste ' +
           '| bold italic underline strikethrough|blockquote | alignleft aligncenter alignright alignjustify |' +
           ' bullist numlist outdent indent | lists image media table |quicklink removeformat |'
       }

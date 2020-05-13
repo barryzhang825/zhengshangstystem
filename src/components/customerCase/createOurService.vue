@@ -105,8 +105,8 @@
     methods: {
 
       uploadChange1(file,fileList){
-        console.log('change1')
-        console.log(file)
+        // console.log('change1')
+        // console.log(file)
         let _this=this
         _this.myfile.indexFile=file.raw
         // this.getBase64(file.raw).then(res=>{
@@ -115,8 +115,8 @@
 
       },
       uploadChange2(file,fileList){
-        console.log('change2')
-        console.log(file)
+        // console.log('change2')
+        // console.log(file)
         let _this=this
         _this.myfile.detailFile=file.raw
         // this.getBase64(file.raw).then(res=>{
@@ -127,6 +127,7 @@
         this.isModify=true
       },
       submitForm(){
+        let _this=this
         if(this.myfile.caseName===''){
           _this.$message.error("请填写标题！");
         }else if(this.myfile.caseGroupName===''){
@@ -138,8 +139,6 @@
         }else if(this.myfile.detailFile===''){
           _this.$message.error("请上传详情图！");
         }else {
-          let _this=this
-
           let formData = new FormData()
           formData.append('caseGroupName', this.myfile.caseGroupName)
           formData.append('detail', this.myfile.detail)
@@ -153,7 +152,7 @@
           }
 
           this.$post('/official-website/background-caseDetail/add',formData).then(data=>{
-            console.log(data.data);
+            // console.log(data.data);
             if(data.data==='案例名称已存在'){
               _this.$message.error("案例名称已存在！");
             }else if(data.data==='添加成功'){
@@ -168,14 +167,14 @@
               _this.$message.error("错误："+data.data);
             }
           }).catch(function (error) {
-            console.log(error,123);
+            // console.log(error,123);
           });
         }
 
 
       },
       cancelSubmit(){
-        console.log('取消啦')
+        // console.log('取消啦')
         this.myfile={
           detailFile:'',
           indexFile:'',
