@@ -44,7 +44,8 @@
           </div>
 <!--          <addOurService ref="addChange" v-if="isAdd"></addOurService>-->
           <createOurService ref="addChange" v-if="isAdd"></createOurService>
-          <changeOurService ref="changeLayer" v-if="isModify"></changeOurService>
+<!--          <changeOurService ref="changeLayer" v-if="isModify"></changeOurService>-->
+          <updateOurService ref="changeLayer" v-if="isModify"></updateOurService>
           <Pagination :pages="totalPages" :currentPage="selectItemPage" @selectPage="pageAxios"></Pagination>
          </div>
 
@@ -61,7 +62,8 @@
 	import Pagination from './pagination';
   // import addOurService from './customerCase/addOurService';
   import createOurService from './customerCase/createOurService';
-  import changeOurService from './customerCase/changeOurService';
+  // import changeOurService from './customerCase/changeOurService';
+  import updateOurService from './customerCase/updateOurService';
   import user from './user.vue';
 
 	export default {
@@ -105,7 +107,8 @@
 			Pagination,
       // addOurService,
       createOurService,
-      changeOurService,
+      // changeOurService,
+      updateOurService,
       user,
       leftMenu
     },
