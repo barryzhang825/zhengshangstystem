@@ -234,34 +234,55 @@
       },
       change(){
 				var _this=this;
-				$("#homeModifyFrom").validate({
-					rules: {
-						serviceTitle: "required",
-						caseGroupName:"required",
-            detail:"required"
-					},
-					messages: {
-						serviceTitle: "不能为空！",
-						caseGroupName:"不能为空！",
-            detail:"不能为空！"
-					},
-					submitHandler:function(form) {
-            _this.myfile.caseName=_this.serviceTitle;
-						_this.myfile.caseGroupName=_this.caseGroupName;
-            _this.myfile.detail=_this.detail;
-            //console.log(_this.getfileData);
-            if(!this.myfile.indexFile){
-              _this.$message.error("请上传缩略图！");
-            }else if(!this.myfile.detailFile){
-              _this.$message.error("请上传详情图！");
-            }else{
-              //console.log("确认添加");
-              //debugger
-              // _this.$refs.upload.submit();
-              console.log(this.myfile)
-            }
-					}
-				});
+				console.log('add')
+
+        _this.myfile.caseName=_this.serviceTitle;
+        _this.myfile.caseGroupName=_this.caseGroupName;
+        _this.myfile.detail=_this.detail;
+        if(!this.myfile.indexFile){
+          _this.$message.error("请上传缩略图！");
+        }else if(!this.myfile.detailFile){
+          _this.$message.error("请上传详情图！");
+        }else{
+          console.log("确认添加");
+          console.log(this.myfile);
+          this.$post('http://39.98.80.223:8080/official-website/background-caseDetail/add',this.myfile).then(data=>{
+            console.log('add结果:'+data);
+          }).catch(function (error) {
+            console.log(error);
+          });
+        }
+
+
+
+				// $("#homeModifyFrom").validate({
+				// 	rules: {
+				// 		serviceTitle: "required",
+				// 		caseGroupName:"required",
+        //     detail:"required"
+				// 	},
+				// 	messages: {
+				// 		serviceTitle: "不能为空！",
+				// 		caseGroupName:"不能为空！",
+        //     detail:"不能为空！"
+				// 	},
+				// 	submitHandler:function(form) {
+        //     _this.myfile.caseName=_this.serviceTitle;
+				// 		_this.myfile.caseGroupName=_this.caseGroupName;
+        //     _this.myfile.detail=_this.detail;
+        //     //console.log(_this.getfileData);
+        //     if(!this.myfile.indexFile){
+        //       _this.$message.error("请上传缩略图！");
+        //     }else if(!this.myfile.detailFile){
+        //       _this.$message.error("请上传详情图！");
+        //     }else{
+        //       //console.log("确认添加");
+        //       //debugger
+        //       // _this.$refs.upload.submit();
+        //       console.log(this.myfile)
+        //     }
+				// 	}
+				// });
 
 
 			}

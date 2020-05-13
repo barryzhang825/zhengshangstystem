@@ -42,7 +42,8 @@
                 </el-table-column>
               </el-table>
           </div>
-          <addOurService ref="addChange" v-if="isAdd"></addOurService>
+<!--          <addOurService ref="addChange" v-if="isAdd"></addOurService>-->
+          <createOurService ref="addChange" v-if="isAdd"></createOurService>
           <changeOurService ref="changeLayer" v-if="isModify"></changeOurService>
           <Pagination :pages="totalPages" :currentPage="selectItemPage" @selectPage="pageAxios"></Pagination>
          </div>
@@ -58,7 +59,8 @@
   import leftMenu from './leftmenu';
   import axios from 'axios'
 	import Pagination from './pagination';
-  import addOurService from './customerCase/addOurService';
+  // import addOurService from './customerCase/addOurService';
+  import createOurService from './customerCase/createOurService';
   import changeOurService from './customerCase/changeOurService';
   import user from './user.vue';
 
@@ -101,7 +103,8 @@
     },
     components: {
 			Pagination,
-      addOurService,
+      // addOurService,
+      createOurService,
       changeOurService,
       user,
       leftMenu
