@@ -93,8 +93,8 @@
     },
     data () {
       return {
-        upLoadUrl:"http://39.98.80.223:8080/official-website/background-caseDetail/update",
-        //upLoadUrl:"http://192.168.1.14:8080/official-website/background-caseDetail/update",
+        upLoadUrl:"https://www.zhengshangwl.com/background-caseDetail/update",
+        //upLoadUrl:"http://192.168.1.14:8080/background-caseDetail/update",
         isModify:true,//是否修改
         serviceId:0,
         serviceTitle:'',
@@ -115,7 +115,7 @@
 
     },
     mounted (){
-      this.$get('/official-website/background-caseGroup/queryByPage',{}).then(data=>{
+      this.$get('/background-caseGroup/queryByPage',{}).then(data=>{
         var seller=JSON.stringify(data);
       	//console.log('select结果:'+seller);
         this.selectList=data.list;

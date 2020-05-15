@@ -110,7 +110,7 @@
     },
     mounted (){
       var _this=this;
-      _this.$get('/official-website/background-caseDetail/queryByPage',{}).then(data=>{
+      _this.$get('/background-caseDetail/queryByPage',{}).then(data=>{
         var seller=JSON.stringify(data);
       	////console.log('结果111:'+seller);
 

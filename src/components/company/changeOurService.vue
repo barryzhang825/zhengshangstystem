@@ -50,8 +50,8 @@
     },
     data () {
       return {
-        upLoadUrl:'http://39.98.80.223:8080/official-website/background-companyImage/update',
-        //upLoadUrl:'http://192.168.1.14:8080/official-website/background-companyImage/update',
+        upLoadUrl:'https://www.zhengshangwl.com/background-companyImage/update',
+        //upLoadUrl:'https://www.zhengshangwl.com/background-companyImage/update',
 				isModify:true,//是否修改
         oldImg:'',
         serviceId:0,

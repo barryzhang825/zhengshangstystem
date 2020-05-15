@@ -112,7 +112,7 @@
     },
     data () {
       return {
-        upLoadUrl:'http://39.98.80.223:8080/official-website/background-caseDetail/add',
+        upLoadUrl:'https://www.zhengshangwl.com/background-caseDetail/add',
         isModify:true,//是否添加
         selectList:[],
         oldImg:'',
@@ -141,7 +141,7 @@
     },
     mounted (){
 
-      this.$get('/official-website/background-caseGroup/queryByPage',{}).then(data=>{
+      this.$get('/background-caseGroup/queryByPage',{}).then(data=>{
         var seller=JSON.stringify(data);
       	//console.log('select结果:'+seller);
         this.selectList=data.list;
@@ -246,7 +246,7 @@
         }else{
           console.log("确认添加");
           console.log(this.myfile);
-          this.$post('http://39.98.80.223:8080/official-website/background-caseDetail/add',this.myfile).then(data=>{
+          this.$post('https://www.zhengshangwl.com/background-caseDetail/add',this.myfile).then(data=>{
             console.log('add结果:'+data);
           }).catch(function (error) {
             console.log(error);

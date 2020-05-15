@@ -37,7 +37,7 @@
     },
     data () {
       return {
-        upLoadUrl:'http://39.98.80.223:8080/official-website/background-partner/add',
+        upLoadUrl:'https://www.zhengshangwl.com/background-partner/add',
 				isModify:true,//是否添加
         oldImg:'',
         isSelect:0,  //选照片为1，不选照片为0

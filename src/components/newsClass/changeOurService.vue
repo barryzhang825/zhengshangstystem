@@ -39,7 +39,7 @@
     },
     data () {
       return {
-        upLoadUrl:'http://39.98.80.223:8080/official-website/background-newsGroupName/update',
+        upLoadUrl:'https://www.zhengshangwl.com/background-newsGroupName/update',
 				isModify:true,//是否修改
         oldImg:'',
         serviceId:0,

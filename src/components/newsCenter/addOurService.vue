@@ -76,7 +76,7 @@
     },
     data () {
       return {
-        upLoadUrl:'http://39.98.80.223:8080/official-website/background-news/add',
+        upLoadUrl:'https://www.zhengshangwl.com/background-news/add',
 				isModify:true,//是否添加
         oldImg:'',
         serviceTitle:'',
@@ -96,7 +96,7 @@
 
     },
     mounted (){
-      this.$get('/official-website/newsPageDetail/getNewsGroupName').then(data=>{
+      this.$get('/newsPageDetail/getNewsGroupName').then(data=>{
         var seller=JSON.stringify(data);
       	//console.log('结果:'+seller);
         this.list=data;

@@ -42,7 +42,7 @@
     },
     data () {
       return {
-        upLoadUrl:"http://39.98.80.223:8080/official-website/background-aboutUs/add",
+        upLoadUrl:"https://www.zhengshangwl.com/background-aboutUs/add",
         isModify:true,//是否添加
         oldImg:'',
         serviceText:'',

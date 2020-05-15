@@ -11,7 +11,7 @@ axios.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded;
 
 //axios.defaults.baseURL = 'http://192.168.1.5:80'
 
-axios.defaults.baseURL = 'http://39.98.80.223:8080'
+axios.defaults.baseURL = 'https://www.zhengshangwl.com'
 
 function ser(obj) {
   var ne = {};

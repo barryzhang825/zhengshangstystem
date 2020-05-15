@@ -31,7 +31,7 @@
    </div>
 </template>
 <style scoped>
-	
+
 </style>
 <script type='ecmascript-6'>
 	export default {
@@ -39,7 +39,7 @@
     },
     data () {
       return {
-        upLoadUrl:'http://39.98.80.223:8080/official-website/background-partner/update',
+        upLoadUrl:'https://www.zhengshangwl.com/background-partner/update',
 				isModify:true,//是否修改
         oldImg:'',
         serviceId:0,

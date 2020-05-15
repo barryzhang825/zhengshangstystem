@@ -101,7 +101,7 @@
             //console.log(dataStr);
             axios({
               method:'post',
-              url:'http://39.98.80.223:8080/official-website/background-login/toLogin',
+              url:'https://www.zhengshangwl.com/background-login/toLogin',
               data:dataStr,
               headers:{'Content-Type': 'application/x-www-form-urlencoded'},
               transformRequest: function(obj) {

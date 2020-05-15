@@ -80,7 +80,7 @@
         pageSize:_this.pageNumber, //每页显示条数（非必填）
         pageNum:_this.selectItemPage  //当前页（非必填）
       }
-      _this.$get('/official-website/background-companyImage/queryByPage',pageData).then(data=>{
+      _this.$get('/background-companyImage/queryByPage',pageData).then(data=>{
         var seller=JSON.stringify(data);
       	//console.log('结果:'+seller);
 
@@ -109,7 +109,7 @@
           cancelButtonText: '取消',
           type: 'warning'
         }).then(() => {
-        	_this.$get('/official-website/background-companyImage/delete',{id:row.id}).then(data=>{
+        	_this.$get('/background-companyImage/delete',{id:row.id}).then(data=>{
         		var seller=JSON.stringify(data);
         		_this.$message({
         			type: 'success',
@@ -177,7 +177,7 @@
           cancelButtonText: '取消',
           type: 'warning'
         }).then(() => {
-					_this.$get('/official-website/background-companyImage/updateUse',dataStr).then(data=>{
+					_this.$get('/background-companyImage/updateUse',dataStr).then(data=>{
 						var seller=JSON.stringify(data);
 						//console.log('结果:'+seller);
 						//console.log(dataStr.id);
@@ -220,7 +220,7 @@
           pageSize:_this.pageNumber
         }
         //console.log(dataObject);
-        _this.$get('/official-website/background-companyImage/queryByPage',dataObject).then(data=>{
+        _this.$get('/background-companyImage/queryByPage',dataObject).then(data=>{
           var seller=JSON.stringify(data);
           //console.log('结果:'+seller);
           _this.ourServiceList=data.list;

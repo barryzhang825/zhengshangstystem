@@ -70,7 +70,7 @@
     },
     data () {
       return {
-        upLoadUrl:'http://39.98.80.223:8080/official-website/background-caseDetail/add',
+        upLoadUrl:'https://www.zhengshangwl.com/background-caseDetail/add',
         isModify:true,//是否添加
         selectList:[],
         isHidden:true,
@@ -89,7 +89,7 @@
     },
     mounted (){
 
-      this.$get('/official-website/background-caseGroup/queryByPage',{}).then(data=>{
+      this.$get('/background-caseGroup/queryByPage',{}).then(data=>{
         var seller=JSON.stringify(data);
         //console.log('select结果:'+seller);
         this.selectList=data.list;
@@ -166,7 +166,7 @@
           }
           // console.log(this.myfile,'myfile')
 
-          this.$post('/official-website/background-caseDetail/update',formData).then(data=>{
+          this.$post('/background-caseDetail/update',formData).then(data=>{
             // console.log(data.data);
             if(data.data==='案例名称已存在'){
               _this.$message.error("案例名称已存在！");

@@ -23,7 +23,7 @@
     },
     data () {
       return {
-        upLoadUrl:"http://39.98.80.223:8080/official-website/background-caseGroup/add",
+        upLoadUrl:"https://www.zhengshangwl.com/background-caseGroup/add",
 				isModify:true,//是否添加
         selectList:[],
         name:'',
