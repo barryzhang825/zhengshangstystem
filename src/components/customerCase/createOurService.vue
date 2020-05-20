@@ -145,11 +145,6 @@
           formData.append('caseName', this.myfile.caseName)
           formData.append('indexFile', this.myfile.indexFile)
           formData.append('detailFile', this.myfile.detailFile)
-          let config = {
-            headers: {
-              'Content-Type': 'multipart/form-data;boundary = ' + new Date().getTime()
-            }
-          }
 
           this.$post('/background-caseDetail/add',formData).then(data=>{
             // console.log(data.data);
