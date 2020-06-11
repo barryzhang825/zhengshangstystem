@@ -71,7 +71,7 @@
     color: #fff;
   }
 </style>
-<script type='ecmascript-6'>
+<script>
 	// import axios from 'axios'
 	//import Header from './../Header';
 
@@ -117,7 +117,7 @@
         //console.log("当前页点击事件:"+event);
         _this.currentPages=event;
         /* sessionStorage.setItem("curPage", event);*/
-        _this.$emit('selectPage', _this.currentPages); 
+        _this.$emit('selectPage', _this.currentPages);
       },
 /*      firstFun(){
         var _this=this;

@@ -14,9 +14,10 @@
           <div class="home-table">
             <el-table :data="ourServiceList" border style="width: 100%">
                 <el-table-column prop="id" label="ID"> </el-table-column>
+                <el-table-column prop="creatTime" label="创建时间"> </el-table-column>
                 <el-table-column prop="name" label="客户姓名"> </el-table-column>
                 <el-table-column prop="need" label="客户需求"> </el-table-column>
-                <el-table-column prop="phoneNumber" label="客户需求"> </el-table-column>
+                <el-table-column prop="phoneNumber" label="联系电话"> </el-table-column>
               </el-table>
           </div>
           <Pagination :pages="totalPages" :currentPage="selectItemPage" @selectPage="pageAxios"></Pagination>
@@ -28,7 +29,7 @@
 <style scoped>
 
 </style>
-<script type='ecmascript-6'>
+<script >
   import leftMenu from './leftmenu';
   import axios from 'axios'
 	import Pagination from './pagination';
